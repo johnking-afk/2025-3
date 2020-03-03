@@ -235,6 +235,50 @@
         }
         document.getElementById('attendance').innerHTML = peoplestr;
     }
+
+
+<form class="summoner-search-form" action="/summoner/" autocomplete="off">
+            <input type="text" name="userName" class="summoner-search-form__text" placeholder="Name1, Name2, ...">
+            <button type="submit" class="summoner-search-form__button">
+                <i class="__spSite __spSite-42"></i>
+            </button>
+            <button type="button" class="summoner-search-form__setting" onclick="$.OP.GG.layout.regionLanguage.open();">
+                <span>NA</span>
+                <i class="__spSite __spSite-138"></i>
+            </button>
+            <div class="summoner-search-extra">
+                <div class="summoner-search-history">
+                    <div class="tabWrap _recognized">
+                        <ul class="summoner-search-history__title tabHeaders">
+                            <li class="tabHeader active" data-tab-show-class="summoner-search-history--recent">
+                                <a href="javascript:;">Recent Search</a>
+                            </li>
+                            <li class="tabHeader" data-tab-show-class="summoner-search-history--favorite">
+                                <a href="javascript:;">Favorites</a>
+                            </li>
+                        </ul>
+                        <div class="tabItems">
+                            <div class="tabItem summoner-search-history--recent" style="display: block;">
+                                <div class="RecentSummonerListWrap">
+                                    <div class="summoner-search-history__list RecentSummonerList"><div class="Item favorited">  <a href="/summoner/userName=ErrorEmerald" class="Link">ErrorEmerald</a> <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('ErrorEmerald');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('ErrorEmerald');" class="Action Delete"></a>   </div></div><div class="Item "> <a href="/summoner/userName=GeeDub" class="Link">GeeDub</a> <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('GeeDub');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('GeeDub');" class="Action Delete"></a>   </div></div><div class="Item "> <a href="/summoner/userName=AlphaChadJungle" class="Link">AlphaChadJungle</a>   <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('AlphaChadJungle');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('AlphaChadJungle');" class="Action Delete"></a> </div></div><div class="Item "> <a href="/summoner/userName=gus2slow" class="Link">gus2slow</a> <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('gus2slow');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('gus2slow');" class="Action Delete"></a>   </div></div><div class="Item "> <a href="/summoner/userName=VanilaDaKila" class="Link">VanilaDaKila</a> <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('VanilaDaKila');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('VanilaDaKila');" class="Action Delete"></a>   </div></div><div class="Item "> <a href="/summoner/userName=chillfio" class="Link">chillfio</a> <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('chillfio');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('chillfio');" class="Action Delete"></a>   </div></div><div class="Item "> <a href="/summoner/userName=kittykatisme" class="Link">kittykatisme</a> <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('kittykatisme');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('kittykatisme');" class="Action Delete"></a>   </div></div><div class="Item favorited">    <a href="/summoner/userName=TheMoosely1" class="Link">TheMoosely1</a>   <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('TheMoosely1');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('TheMoosely1');" class="Action Delete"></a> </div></div><div class="Item "> <a href="/summoner/userName=The%20TH0T%20PATR0L" class="Link">The TH0T PATR0L</a>   <div class="Actions"><a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.toggle('The TH0T PATR0L');" class="Action Add"></a><a href="#" onclick="$.OP.GG.common.SummonerHistory.History.remove('The TH0T PATR0L');" class="Action Delete"></a> </div></div></div>
+                                    <div class="summoner-search-history__message NotFound" style="display: none;">
+                                        <span><img src="//opgg-static.akamaized.net/images/site/icon-history-info.png" class="Image">There is no summoner you have seen recently.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabItem summoner-search-history--favorite" style="display: none;">
+                                <div class="FavoriteSummonerListWrap">
+                                    <div class="summoner-search-history__list FavoriteSummonerList"><div class="Item">  <a href="/summoner/userName=ErrorEmerald" class="Link">     <div class="SummonerName">ErrorEmerald</div>    </a>    <div class="Actions">       <a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.remove('ErrorEmerald'); return false;" class="Action Delete">해제</a>    </div></div><div class="Item">  <a href="/summoner/userName=Kat323" class="Link">       <div class="SummonerName">Kat323</div>  </a>    <div class="Actions">       <a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.remove('Kat323'); return false;" class="Action Delete">해제</a>  </div></div><div class="Item">  <a href="/summoner/userName=Smoldered%20Dreams" class="Link">       <div class="SummonerName">Smoldered Dreams</div>    </a>    <div class="Actions">       <a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.remove('Smoldered Dreams'); return false;" class="Action Delete">해제</a>    </div></div><div class="Item">  <a href="/summoner/userName=SoullessVortex" class="Link">       <div class="SummonerName">SoullessVortex</div>  </a>    <div class="Actions">       <a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.remove('SoullessVortex'); return false;" class="Action Delete">해제</a>  </div></div><div class="Item">  <a href="/summoner/userName=TheMoosely1" class="Link">      <div class="SummonerName">TheMoosely1</div> </a>    <div class="Actions">       <a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.remove('TheMoosely1'); return false;" class="Action Delete">해제</a> </div></div><div class="Item">  <a href="/summoner/userName=Wickzer" class="Link">      <div class="SummonerName">Wickzer</div> </a>    <div class="Actions">       <a href="#" onclick="$.OP.GG.common.SummonerHistory.Favorite.remove('Wickzer'); return false;" class="Action Delete">해제</a> </div></div></div>
+                                    <div class="summoner-search-history__message NotFound" style="display: none;">
+                                        <span><img src="//opgg-static.akamaized.net/images/site/icon-history-info.png" class="Image">Add your <i class="__spSite __spSite-100"></i> favorite summoner for easy updates on the latest stats.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </form>
     </script>
 </body>
 
